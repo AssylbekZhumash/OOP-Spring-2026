@@ -3,8 +3,8 @@ package pr2;
 public class StarTriangle
 {
     private int count;
-    public StarTriangle(int cnt ){
-        this. count = cnt;
+    public StarTriangle(int width ){
+        this. count = width;
     }
 
     public String toString(){
@@ -19,7 +19,7 @@ public class StarTriangle
     }
 
     public static void main(String[] args){
-        StarTriangle small = new StarTriangle(3);
+        StarTriangle small = new StarTriangle(6);
         System.out.println(small.toString());
     }
 
