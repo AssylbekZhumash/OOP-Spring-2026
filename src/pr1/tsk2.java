@@ -5,7 +5,7 @@ public class tsk2 {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Length of one side?");
+        System.out.println("Length ?");
         int a = scanner.nextInt();
         double b = a;
 

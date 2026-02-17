@@ -1,18 +1,16 @@
 package pr1;
-import java.util.Scanner;
+
 public class tsk5 {
     public static void main(String[] args) {
+      double balance = 1000;
+      double interestRate = 10;
+      double interest = balance * interestRate/100;
+      double newbalance= balance + interest;
 
-        int balance = 0;
-        System.out.println("Your current balance is: " + balance);
-        System.out.println("Please enter your money: ");
 
-        Scanner scanner = new Scanner(System.in);
-
-        int money = scanner.nextInt();
-        balance += money;
-
-        System.out.println("You inserted " + money + "KZT! Your current balance is " + balance);
-
+      System.out.println("Initial balance " + balance);
+      System.out.println("Interest rate " + interestRate );
+      System.out.println("With interest add "+ interest);
+      System.out.println("New balance " + newbalance);
     }
 }
