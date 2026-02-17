@@ -1,6 +1,6 @@
 package lab1.problem4;
 
-import pr2.Student;              // ← импорт из pr2
+import pr2.Student;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
