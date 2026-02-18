@@ -36,7 +36,7 @@ class BankAccount {
         this.balance += amount;
     }
 
-    public void showInfo() {
+    public void showInfo(){
         System.out.println("Bank: " + BANK_NAME);
         System.out.println("ID: " + id);
         System.out.println("Owner: " + owner);
@@ -44,16 +44,18 @@ class BankAccount {
         System.out.println("Balance: " + balance);
         System.out.println();
     }
+
 }
 
 public class tsk2 {
     public static void main(String[] args) {
 
-        BankAccount a1 = new BankAccount("Asyl", 2026, AccountType.DEBIT);
+        BankAccount a1 = new BankAccount("Asyl", 2026,AccountType.DEBIT);
         BankAccount a2 = new BankAccount("Beka", 100, AccountType.SAVINGS);
 
         a1.deposit(350);
         a1.deposit(150);
+        a2.deposit(100);
 
         a1.showInfo();
         a2.showInfo();

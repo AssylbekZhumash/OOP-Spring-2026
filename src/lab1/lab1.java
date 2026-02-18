@@ -2,33 +2,35 @@ package lab1;
 
 import java.util.Scanner;
 
-class Data{
+class Data {
     private double sum;
     private double max;
     private int count;
 
-    public Data(){
+    public Data() {
         sum = 0;
         max = Double.NEGATIVE_INFINITY;
         count = 0;
 
     }
-    public void addValue (double value){
+
+    public void addValue(double value) {
         sum += value;
-        count ++;
-        if(value >max){
+        count++;
+        if (value > max) {
             max = value;
         }
     }
-    public double getAverage(){
+
+    public double getAverage() {
         if (count == 0) return 0;
-        return sum/count;
+        return sum / count;
     }
     public double getMax(){
-        if(count == 0) return 0;
-        return max;
+     if(count == 0) return 0;
+     return max;
 
-    }
+}
 
 }
 public class lab1 {
